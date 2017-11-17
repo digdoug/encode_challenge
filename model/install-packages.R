@@ -1,0 +1,6 @@
+dir.create(Sys.getenv("libs/R"), showWarnings = FALSE, recursive = TRUE)
+install.packages("timeDate", Sys.getenv("libs/R"), repos = "http://cran.case.edu" )
+install.packages("file_name.tar.gz", Sys.getenv("R_LIBS_USER"))
+source("https://bioconductor.org/biocLite.R")
+biocLite("GenomicRanges")
+biocLite("BSgenome.Hsapiens.UCSC.hg19")

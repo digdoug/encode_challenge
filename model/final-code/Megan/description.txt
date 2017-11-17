@@ -1,0 +1,4 @@
+I processed the conservative narrowPeak files for the DNase-seq peak data. From the bed files of ladder, test, and train areas I cross the regions to append corresponding DNase data to the files. I used the bedtools2 intersectBed function to do this, which is called in the motifToFeature.sh script. This file is called in my peaks_*_**.sh scripts. (In my final-code directory, I placed example scripts for the A549 cell line. These show how I called motifToFeature.sh on the ladder, test, and train files.) After the intersectBed function was run, I did some post-processing to keep the information needed and get the files in the correct format. An example script shown for all the train regions files in the final-code called post_process_train_megan.sh. Once that is run, the files are ready for the network training.
+
+*ladder, test, or train
+**cell line
